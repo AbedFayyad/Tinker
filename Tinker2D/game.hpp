@@ -9,8 +9,6 @@
 #ifndef game_hpp
 #define game_hpp
 
-class Graphics;
-
 class Game {
 public:
     Game();

@@ -80,16 +80,16 @@
 		B174DD5A1D17BCD3001FF881 /* Tinker2D */ = {
 			isa = PBXGroup;
 			children = (
-				B174DD5B1D17BCD3001FF881 /* main.cpp */,
 				B174DD671D17BD23001FF881 /* game.cpp */,
-				B174DD701D17CB9B001FF881 /* globals.cpp */,
-				B174DD6A1D17BD28001FF881 /* graphics.cpp */,
-				B174DD6D1D17BD2C001FF881 /* input.cpp */,
-				B174DD761D17CE51001FF881 /* sprite.cpp */,
 				B174DD681D17BD23001FF881 /* game.hpp */,
+				B174DD701D17CB9B001FF881 /* globals.cpp */,
 				B174DD711D17CB9B001FF881 /* globals.hpp */,
+				B174DD6A1D17BD28001FF881 /* graphics.cpp */,
 				B174DD6B1D17BD28001FF881 /* graphics.hpp */,
+				B174DD6D1D17BD2C001FF881 /* input.cpp */,
 				B174DD6E1D17BD2C001FF881 /* input.hpp */,
+				B174DD5B1D17BCD3001FF881 /* main.cpp */,
+				B174DD761D17CE51001FF881 /* sprite.cpp */,
 				B174DD771D17CE51001FF881 /* sprite.hpp */,
 			);
 			path = Tinker2D;

@@ -38,17 +38,6 @@ Game::~Game() {
 void Game::gameLoop() {
     Graphics graphics;
     Input input;
-    
-    Sprite sprite;
-    sprite.boundingBox.x = 0;
-    sprite.boundingBox.y = 0;
-    sprite.boundingBox.w = 16;
-    sprite.boundingBox.h = 16;
-    sprite.position.x = 100;
-    sprite.position.y = 100;
-    sprite.position.w = 16;
-    sprite.position.h = 16;
-    sprite.texture = SDL_CreateTextureFromSurface(graphics.renderer, SDL_LoadBMP("fuck.bmp"));
         
     bool shouldQuit = false;
     SDL_Event event;
@@ -56,6 +45,14 @@ void Game::gameLoop() {
     int lastUpdateTime = SDL_GetTicks();
     int currentTime;
     int elapsedTime;
+    
+    // TODO: remove me
+    (void) lastUpdateTime;
+    (void) currentTime;
+    (void) elapsedTime;
+    (void) FPS;
+    (void) MS_PER_S;
+    (void) MAX_FRAME_TIME;
     
     // Each iteration of this loop is a single frame
     while (!shouldQuit) {
@@ -77,14 +74,12 @@ void Game::gameLoop() {
         
         // Handle keystrokes
         if (input.wasKeyPressed(SDL_SCANCODE_ESCAPE)) shouldQuit = true;
-        else if (input.isKeyHeld(SDL_SCANCODE_LEFT)) sprite.position.x -= 1;
-        else if (input.isKeyHeld(SDL_SCANCODE_RIGHT)) sprite.position.x += 1;
+        else if (input.isKeyHeld(SDL_SCANCODE_LEFT)) NULL; // Move left
+        else if (input.isKeyHeld(SDL_SCANCODE_RIGHT)) NULL; // Move right
         
         // Simulate physics
         
         // Redraw graphics
-        graphics.clear();
-        graphics.draw(&sprite);
-        graphics.update();
+        graphics.draw();
     }
 }

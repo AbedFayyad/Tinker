@@ -9,22 +9,23 @@
 #ifndef graphics_hpp
 #define graphics_hpp
 
-class Sprite;
 struct SDL_Window;
-struct SDL_Renderer;
-struct SDL_Surface;
+typedef void *SDL_GLContext;
+typedef unsigned int uint32_t;
+typedef uint32_t GLuint;
 
 class Graphics {
 public:
     Graphics();
     ~Graphics();
     
-    void clear();
-    void draw(Sprite *sprite);
-    void update();
-    SDL_Renderer *renderer;
+    void draw();
 private:
     SDL_Window *window;
+    SDL_GLContext glcontext;
+    
+    GLuint shaderProgram;
+    GLuint VAO, VBO, EBO;
 };
 
 #endif /* graphics_hpp */
