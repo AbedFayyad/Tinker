@@ -6,10 +6,10 @@
 //
 //
 
-#include <iostream>
+#include "game.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main(int argc, const char *argv[]) {
+    Game game;
+    
     return 0;
 }

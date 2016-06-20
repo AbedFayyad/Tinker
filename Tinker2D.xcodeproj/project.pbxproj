@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B174DD5C1D17BCD3001FF881 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B174DD5B1D17BCD3001FF881 /* main.cpp */; };
+		B174DD631D17BCE0001FF881 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B174DD621D17BCE0001FF881 /* SDL2.framework */; };
+		B174DD691D17BD23001FF881 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B174DD671D17BD23001FF881 /* game.cpp */; };
+		B174DD6C1D17BD28001FF881 /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B174DD6A1D17BD28001FF881 /* graphics.cpp */; };
+		B174DD6F1D17BD2C001FF881 /* input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B174DD6D1D17BD2C001FF881 /* input.cpp */; };
+		B174DD721D17CB9B001FF881 /* globals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B174DD701D17CB9B001FF881 /* globals.cpp */; };
+		B174DD781D17CE51001FF881 /* sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B174DD761D17CE51001FF881 /* sprite.cpp */; };
+		B174DD7A1D183AA4001FF881 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B174DD791D183AA4001FF881 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,18 @@
 /* Begin PBXFileReference section */
 		B174DD581D17BCD3001FF881 /* Tinker2D */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Tinker2D; sourceTree = BUILT_PRODUCTS_DIR; };
 		B174DD5B1D17BCD3001FF881 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B174DD621D17BCE0001FF881 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		B174DD671D17BD23001FF881 /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		B174DD681D17BD23001FF881 /* game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
+		B174DD6A1D17BD28001FF881 /* graphics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = graphics.cpp; sourceTree = "<group>"; };
+		B174DD6B1D17BD28001FF881 /* graphics.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = graphics.hpp; sourceTree = "<group>"; };
+		B174DD6D1D17BD2C001FF881 /* input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input.cpp; sourceTree = "<group>"; };
+		B174DD6E1D17BD2C001FF881 /* input.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = input.hpp; sourceTree = "<group>"; };
+		B174DD701D17CB9B001FF881 /* globals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = globals.cpp; sourceTree = "<group>"; };
+		B174DD711D17CB9B001FF881 /* globals.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = globals.hpp; sourceTree = "<group>"; };
+		B174DD761D17CE51001FF881 /* sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sprite.cpp; sourceTree = "<group>"; };
+		B174DD771D17CE51001FF881 /* sprite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sprite.hpp; sourceTree = "<group>"; };
+		B174DD791D183AA4001FF881 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B174DD7A1D183AA4001FF881 /* OpenGL.framework in Frameworks */,
+				B174DD631D17BCE0001FF881 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +62,8 @@
 		B174DD4F1D17BCD3001FF881 = {
 			isa = PBXGroup;
 			children = (
+				B174DD791D183AA4001FF881 /* OpenGL.framework */,
+				B174DD621D17BCE0001FF881 /* SDL2.framework */,
 				B174DD5A1D17BCD3001FF881 /* Tinker2D */,
 				B174DD591D17BCD3001FF881 /* Products */,
 			);
@@ -58,6 +81,16 @@
 			isa = PBXGroup;
 			children = (
 				B174DD5B1D17BCD3001FF881 /* main.cpp */,
+				B174DD671D17BD23001FF881 /* game.cpp */,
+				B174DD701D17CB9B001FF881 /* globals.cpp */,
+				B174DD6A1D17BD28001FF881 /* graphics.cpp */,
+				B174DD6D1D17BD2C001FF881 /* input.cpp */,
+				B174DD761D17CE51001FF881 /* sprite.cpp */,
+				B174DD681D17BD23001FF881 /* game.hpp */,
+				B174DD711D17CB9B001FF881 /* globals.hpp */,
+				B174DD6B1D17BD28001FF881 /* graphics.hpp */,
+				B174DD6E1D17BD2C001FF881 /* input.hpp */,
+				B174DD771D17CE51001FF881 /* sprite.hpp */,
 			);
 			path = Tinker2D;
 			sourceTree = "<group>";
@@ -118,6 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B174DD5C1D17BCD3001FF881 /* main.cpp in Sources */,
+				B174DD691D17BD23001FF881 /* game.cpp in Sources */,
+				B174DD781D17CE51001FF881 /* sprite.cpp in Sources */,
+				B174DD721D17CB9B001FF881 /* globals.cpp in Sources */,
+				B174DD6F1D17BD2C001FF881 /* input.cpp in Sources */,
+				B174DD6C1D17BD28001FF881 /* graphics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +246,10 @@
 		B174DD601D17BCD3001FF881 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -215,6 +257,10 @@
 		B174DD611D17BCD3001FF881 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
