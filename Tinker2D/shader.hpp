@@ -20,7 +20,7 @@ public:
     Shader(const GLchar *vertexShaderPath, const GLchar *fragmentShaderPath);
     
     // Install this shader's program object as part of the current rendering state
-    void use();
+    void use() const;
 private:
     
     // The shader program's ID
